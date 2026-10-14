@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "x-gateway 登录助手",
+  "version": "0.3.0",
+  "minimum_chrome_version": "105",
+  "description": "使用本机 xweb 凭据按指定字段填写网站表单，默认不提交。",
+  "permissions": [
+    "nativeMessaging",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
